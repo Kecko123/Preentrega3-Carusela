@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@600&family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.robotoBold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgb(7, 2, 93) 0%, rgb(47, 47, 222) 55%, rgb(7, 2, 93) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR/HEADER */
+.logo {
+    width: 80px;
+}
+
+header {
+    background-image: linear-gradient(90deg, blueviolet, blue);
+    border-bottom: 1px black solid;
+}
+
+.headerH1 {
+    font-family: 'Dai Banna SIL', serif;
+    font-size: 2.4em;
+}
+
+header .nav-link {
+    color: black;
+    background-color: #c2e1e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .nav-link:hover {
+    background-color: #a3bebd;
+}
+
+header .nav-item {
+    border: 1px black solid;
+}
+
+
+/**********************INDEX*****************************/
+
+
+/* CARROUSEL */
+
+.carrouselSombra {
+    box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+}
+
+.flechasCarrousel {
+    color: black;
+}
+
+.flechasCarrouselDos {
+    color: white;
+}
+
+.carousel {
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+/* MAIN */
+.imgIndexUno {
+    border-radius: 1.5rem;
+}
+
+.parrafoUno {
+    background-color: #89D1D0;
+    border-radius: 1.5rem;
+}
+
+/* SECTION */
+
+.sectionIndex {
+    border: 1px black solid;
+    background-color: #D2D2F6;
+}
+
+.sectionIndex a {
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+/**********************SOBRE NOSOTROS*********************/
+
+.mainSN {
+    margin-bottom: 5rem;
+}
+
+.mainSN h2 {
+    font-size: 3em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.mainSN p {
+    font-size: 1.3em;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/**********************CONTACTO***************************/
+.mainContacto {
+    margin-bottom: 4.3rem;
+}
+
+.formContacto {
+    background-color: #89D1D0;
+}
+
+.sectionContacto {
+    background-color: #89D1D0;
+    border: 1px black solid;
+}
+
+.sectionContacto a {
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.botonEnviar {
+    background-color: #26e10580;
+    border: 1px black solid;
+}
+
+.botonEnviar:hover {
+    background-color: #20bc04aa;
+    border: 1px black solid;
+}
+
+.botonRestablecer {
+    background-color: #d7050580;
+    border: 1px black solid;
+}
+
+.botonRestablecer:hover {
+    background-color: #be0505aa;
+    border: 1px black solid;
+}
+
+.botonCerrar {
+    background-color: darkslategrey;
+    color: rgb(244, 242, 242);
+    border-radius: 2px;
+    border: 1px transparent solid;
+    padding: 0.3rem;
+}
+.botonCerrar:hover {
+    background-color: rgb(37, 62, 62);
+}
+
+
+/*******************SACAR TURNO************************/
+
+.mainST {
+    background-color: #98b8b7;
+    border: 2px rgb(18, 18, 18) solid;
+    border-radius: 2rem;
+}
+
+
+
+
+/*******************UBICACION**************************/
+.ubicacionMainDivUno {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ubicacionMainDivUno h2 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.ubicacionMainDivUno p {
+    font-size: 1.12em;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #241818;
+}
+
+footer a {
+    color: lightgreen !important;
+}
+
+footer a:hover {
+    color: rgb(127, 212, 127) !important;
+}
+
+footer p {
+    color: white;
+}
