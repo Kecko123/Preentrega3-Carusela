@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Taller Miguelito | Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="../media/Miguelito.png">
+        <!-- SEO -->
+        <meta name="description" content="¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte. Contáctanos a través de nuestro formulario en línea. En Taller Miguelito, tu satisfacción es nuestra prioridad. Estamos ansiosos por escucharte y brindarte el mejor servicio en mecánica automotriz.">
+        <meta name="keywords" content="taller miguelito ,taller mecánico, reparación de autos, mantenimiento de vehículos, servicio automotriz, cambio de aceite, frenos, neumáticos, afinamiento, diagnóstico de motor, mecánicos expertos, Villa Soldati, inspección de automóviles">
+        <meta name="author" content="Ezequiel Carusela">
+        <meta name="copyright" content="Propiedad de Ezequiel Carusela">
 </head>
 
 <body>
@@ -31,16 +36,16 @@
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sacarturno.html">Sacar Turno</a>
+                        <a class="nav-link" href="./sacarturno.html">Sacar Turno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                        <a class="nav-link" href="./ubicacion.html">Ubicación</a>
                     </li>
                 </ul>
             </div>
@@ -48,10 +53,50 @@
     </header>
 
     <!-- MAIN -->
-    <main class="container-fluid row mt-5 mainContacto">
-        <section class="col-xl-6">
-            <div>
-                <div class="sectionContacto p-3">
+    <main class="row mt-5 mainContacto">
+        <form class="border border-black col-xl-6 col-lg-6 formContacto">
+            <div class="input-group mt-3">
+                <span class="input-group-text" id="basic-addon1">Nombre:</span>
+                <input type="text" class="form-control" placeholder="Ej: Martín">
+            </div>
+
+            <div class="input-group mt-3">
+                <span class="input-group-text" id="basic-addon1">Apellido:</span>
+                <input type="text" class="form-control" placeholder="Ej: Gutiérrez">
+            </div>
+
+            <div class="input-group mt-3">
+                <span class="input-group-text" id="basic-addon1">Email:</span>
+                <input type="email" class="form-control" placeholder="Ej: MartinGutierrez@ejemplo.com">
+            </div>
+
+            <div class="mt-2 mb-2">
+                <textarea class="form-control" placeholder="DETALLES DE SU CONSULTA" cols="58" rows="8"></textarea>
+            </div>
+
+            <div class="mb-3 text-center">
+                <button class="btn botonEnviar btn-lg rounded-pill px-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" type="button">Enviar</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Consulta Enviada Correctamente!</h1>
+                            </div>
+                            <div class="modal-body text-center">
+                                <button type="button" class="botonCerrar" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn botonRestablecer btn-lg rounded-pill px-3" type="reset">Borrar</button>
+            </div>
+
+        </form>
+        <section class="col-xl-6 col-lg-6">
+                <div class="infoDeContacto p-3 sectionContacto./">
                     <p class="fs-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                             class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -117,51 +162,8 @@
                         Nuestros horarios son Lunes a Viernes de 9 AM a 18 PM
                     </p>
                 </div>
-
-            </div>
         </section>
 
-        <form class="border border-black col-xl-6 formContacto">
-            <div class="input-group mt-3">
-                <span class="input-group-text" id="basic-addon1">Nombre:</span>
-                <input type="text" class="form-control" placeholder="Ej: Martín">
-            </div>
-
-            <div class="input-group mt-3">
-                <span class="input-group-text" id="basic-addon1">Apellido:</span>
-                <input type="text" class="form-control" placeholder="Ej: Gutiérrez">
-            </div>
-
-            <div class="input-group mt-3">
-                <span class="input-group-text" id="basic-addon1">Email:</span>
-                <input type="email" class="form-control" placeholder="Ej: MartinGutierrez@ejemplo.com">
-            </div>
-
-            <div class="mt-2 mb-2">
-                <textarea class="form-control" placeholder="DETALLES DE SU CONSULTA" cols="58" rows="8"></textarea>
-            </div>
-
-            <div class="mb-3 text-center">
-                <button class="btn botonEnviar btn-lg rounded-pill px-3" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" type="button">Enviar</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content ">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Consulta Enviada Correctamente!</h1>
-                            </div>
-                            <div class="modal-body text-center">
-                                <button type="button" class="botonCerrar" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="btn botonRestablecer btn-lg rounded-pill px-3" type="reset">Borrar</button>
-            </div>
-
-        </form>
     </main>
 
 

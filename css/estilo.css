@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: linear-gradient(90deg, rgb(7, 2, 93) 0%, rgb(47, 47, 222) 55%, rgb(7, 2, 93) 100%);
+    background-image: linear-gradient(90deg, rgba(121,96,85,1) 0%, rgba(200,176,160,1) 100%);
 }
 
 a {
@@ -21,10 +21,24 @@ a {
 .logo {
     width: 80px;
 }
+@keyframes rotacion360grados {
+    0%{transform: rotateZ(-360deg) scale(120%)}
+}
+.logo:hover{
+    transform: rotateZ(-360deg);
+    transition: all 1s;
+    animation-duration: 1s;
+}
+.logo:hover::before{
+    transform: rotateZ(-360deg);
+    transition: all 1s;
+    animation-duration: 1s;
+}
+
 
 header {
-    background-image: linear-gradient(90deg, blueviolet, blue);
-    border-bottom: 1px black solid;
+    background-image: linear-gradient(90deg, rgba(107,75,62,1) 0%, rgba(196,158,133,1) 100%);
+    border-bottom: 2px black solid;
 }
 
 .headerH1 {
@@ -33,17 +47,28 @@ header {
 }
 
 header .nav-link {
-    color: black;
-    background-color: #c2e1e0;
+    color: rgb(22, 22, 22);
+    position: relative;
     font-family: 'Roboto', sans-serif;
 }
 
-header .nav-link:hover {
-    background-color: #a3bebd;
+header .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
 }
 
-header .nav-item {
-    border: 1px black solid;
+header .nav-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 
@@ -78,18 +103,28 @@ header .nav-item {
 }
 
 .parrafoUno {
-    background-color: #89D1D0;
+    background-color: #FFD6AF;
     border-radius: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .parrafoUno, .imgIndexUno, .imgIndexDos, .mainST {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 16px;
+    }
 }
 
 /* SECTION */
 
-.sectionIndex {
+.infoDeContacto {
     border: 1px black solid;
-    background-color: #D2D2F6;
+    background-color: #d6baa1;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
-.sectionIndex a {
+.infoDeContacto a {
     font-size: 0.9em;
     display: block;
     margin-bottom: 1rem;
@@ -102,7 +137,7 @@ header .nav-item {
     margin-bottom: 5rem;
 }
 
-.mainSN h2 {
+.mainSN h1 {
     font-size: 3em;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -117,21 +152,18 @@ header .nav-item {
 /**********************CONTACTO***************************/
 .mainContacto {
     margin-bottom: 4.3rem;
+    margin-left: 16px ;
+    margin-right: 16px ;
+}
+
+@media (max-width: 386px) {
+    .sectionContacto a{
+        font-size: 0.8em;
+    }
 }
 
 .formContacto {
-    background-color: #89D1D0;
-}
-
-.sectionContacto {
-    background-color: #89D1D0;
-    border: 1px black solid;
-}
-
-.sectionContacto a {
-    font-size: 0.9em;
-    display: block;
-    margin-bottom: 1rem;
+    background-color: #d6baa1;
 }
 
 .botonEnviar {
@@ -169,7 +201,7 @@ header .nav-item {
 /*******************SACAR TURNO************************/
 
 .mainST {
-    background-color: #98b8b7;
+    background-color: #d6baa1;
     border: 2px rgb(18, 18, 18) solid;
     border-radius: 2rem;
 }
@@ -182,7 +214,7 @@ header .nav-item {
     font-family: 'Open Sans', sans-serif;
 }
 
-.ubicacionMainDivUno h2 {
+.ubicacionMainDivUno h1 {
     font-size: 3em;
     font-weight: 600;
 }
@@ -190,7 +222,6 @@ header .nav-item {
 .ubicacionMainDivUno p {
     font-size: 1.12em;
 }
-
 
 
 /* FOOTER */
