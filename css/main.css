@@ -97,13 +97,13 @@ a {
   border-radius: 1.5rem;
 }
 
-.infoDeContacto {
+.infoDeContactoIndex, .infoDeContactoMargins {
   border: 1px black solid;
   background-color: #d6baa1;
   margin: 0 16px 0 16px;
   line-height: 2rem;
 }
-.infoDeContacto a {
+.infoDeContactoIndex a, .infoDeContactoMargins a {
   font-size: 1em;
   display: block;
   margin: 0 0 1rem 0;
@@ -183,16 +183,18 @@ footer p {
 }
 
 @media (max-width: 992px) {
+  .infoDeContactoMargins,
   .parrafoUno,
   .imgIndexUno,
   .imgIndexDos,
+  .imgContacto,
   .mainST {
     margin: 16px 16px 0 16px;
   }
 }
 @media (max-width: 462px) {
   .infoDeContactoMargins {
-    margin: 0 0 0 0;
+    margin: 16px 0 0 0;
   }
   .infoDeContactoMargins a {
     font-size: 0.77em;

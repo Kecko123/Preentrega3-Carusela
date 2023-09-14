@@ -38,7 +38,7 @@ a {
     border-radius: $borderRadiusSm;
 }
 
-.infoDeContacto {
+.infoDeContactoIndex, .infoDeContactoMargins {
     border: $commonBorder;
     background-color: $secondaryColor;
     @include margins(0, 16px, 0, 16px);
