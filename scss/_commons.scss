@@ -1,0 +1,69 @@
+.font-robotoBold {
+    @extend .font-roboto;
+    font-weight: bold;
+}
+
+
+.boton {
+    &Enviar {
+        background-color: #26e10580;
+        border: $commonBorder;
+
+        &:hover {
+            @extend .botonEnviar;
+            background-color: #20bc04aa;
+        }
+    }
+
+    &Restablecer {
+        background-color: #d7050580;
+        border: $commonBorder;
+
+        &:hover {
+            @extend .botonRestablecer;
+            background-color: #be0505aa;
+        }
+    }
+}
+
+
+.carousel {
+    @include margins(3rem, inherit, 3rem, inherit);
+    padding: 0;
+}
+
+.infoDeContacto {
+    border: $commonBorder;
+    background-color: $secondaryColor;
+    @include margins(0, 16px, 0, 16px);
+    line-height: 2rem;
+
+    a {
+        font-size: map-get($map: $fontSize, $key: 'Sm');
+        display: block;
+        @include margins(0, 0, 1rem, 0)
+    }
+
+}
+
+.main {
+    &SN {
+        h1 {
+            font-size: map-get($map: $fontSize, $key: 'Xl');
+            @include margins(2rem, 0, 2rem, 0);
+        }
+
+        p {
+            font-size: map-get($map: $fontSize, $key: 'Md');
+            @include paddings(0, 3rem, 0, 3rem)
+        }
+    }
+
+    &textSN {
+        @include margins(0, 0, 5rem, 0)
+    }
+
+    &Contacto {
+        @include margins(0, 16px, 1rem, 16px)
+    }
+}
