@@ -104,7 +104,7 @@ a {
   line-height: 2rem;
 }
 .infoDeContacto a {
-  font-size: 0.8em;
+  font-size: 1em;
   display: block;
   margin: 0 0 1rem 0;
 }
@@ -190,8 +190,16 @@ footer p {
     margin: 16px 16px 0 16px;
   }
 }
-@media (max-width: 386px) {
-  .sectionContacto a {
+@media (max-width: 462px) {
+  .infoDeContactoMargins {
+    margin: 0 0 0 0;
+  }
+  .infoDeContactoMargins a {
+    font-size: 0.77em;
+  }
+}
+@media (max-width: 398px) {
+  .infoDeContactoIndex a {
     font-size: 0.8em;
   }
 }

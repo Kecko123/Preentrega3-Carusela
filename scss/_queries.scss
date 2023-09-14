@@ -8,10 +8,21 @@
     }
 }
 
-@media (max-width: 386px) {
-    .sectionContacto {
+@media (max-width: 462px) {
+    .infoDeContactoMargins {
+        @include margins (0, 0, 0, 0);
+
         a {
-            font-size: map-get($map: $fontSize, $key: Sm);
+            font-size: 0.77em;
+        }
+    }
+
+}
+
+@media (max-width: 398px) {
+    .infoDeContactoIndex {
+        a {
+            font-size: map-get($map: $fontSize, $key: XS);
         }
     }
 }
