@@ -1,0 +1,17 @@
+@media (max-width: 992px) {
+
+    .parrafoUno,
+    .imgIndexUno,
+    .imgIndexDos,
+    .mainST {
+        @include margins (16px, 16px, 0, 16px);
+    }
+}
+
+@media (max-width: 386px) {
+    .sectionContacto {
+        a {
+            font-size: map-get($map: $fontSize, $key: Sm);
+        }
+    }
+}

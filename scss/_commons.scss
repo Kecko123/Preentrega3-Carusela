@@ -1,35 +1,41 @@
-.font-robotoBold {
-    @extend .font-roboto;
-    font-weight: bold;
+body {
+    background-image: $principalBG;
+}
+
+a {
+    text-decoration: none;
 }
 
 
-.boton {
-    &Enviar {
-        background-color: #26e10580;
-        border: $commonBorder;
-
-        &:hover {
-            @extend .botonEnviar;
-            background-color: #20bc04aa;
-        }
-    }
-
-    &Restablecer {
-        background-color: #d7050580;
-        border: $commonBorder;
-
-        &:hover {
-            @extend .botonRestablecer;
-            background-color: #be0505aa;
-        }
-    }
-}
 
 
 .carousel {
     @include margins(3rem, inherit, 3rem, inherit);
     padding: 0;
+
+    &Sombra {
+        box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+        -webkit-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.64);
+    }
+
+    &Flechas {
+        color: $black;
+
+        &Dos {
+            color: $white;
+        }
+    }
+}
+
+
+.imgIndexUno {
+    border-radius: $borderRadiusSm;
+}
+
+.parrafoUno {
+    background-color: $secondaryColor;
+    border-radius: $borderRadiusSm;
 }
 
 .infoDeContacto {
@@ -65,5 +71,80 @@
 
     &Contacto {
         @include margins(0, 16px, 1rem, 16px)
+    }
+
+    &ST {
+        background-color: $secondaryColor;
+        border: $heavierBorder;
+        border-radius: $borderRadiusLg;
+    }
+}
+
+.formContacto {
+    background-color: $secondaryColor;
+}
+
+.boton {
+    &Enviar {
+        background-color: #26e10580;
+        border: $commonBorder;
+
+        &:hover {
+            @extend .botonEnviar;
+            background-color: #20bc04aa;
+        }
+    }
+
+    &Restablecer {
+        background-color: #d7050580;
+        border: $commonBorder;
+
+        &:hover {
+            @extend .botonRestablecer;
+            background-color: #be0505aa;
+        }
+    }
+
+    &Cerrar {
+        background-color: #264141;
+        color: $white;
+        border-radius: 2px;
+        border: 1px transparent solid;
+        @include paddings(0.3rem, 0.3rem, 0.3rem, 0.3rem);
+
+        &:hover {
+            background-color: #253e3e;
+        }
+    }
+}
+
+.ubicacion {
+    &MainDivUno {
+        font-family: map-get($map: $fonts, $key: openSans);
+
+        h1 {
+            font-size: map-get($map: $fontSize, $key: L);
+            font-weight: bold;
+        }
+
+        p {
+            font-size: map-get($map: $fontSize, $key: Md);
+        }
+    }
+}
+
+footer {
+    background-color: $footerColor;
+
+    a {
+        color: #72f072 !important;
+
+        &:hover {
+            color: #72cf72;
+        }
+    }
+
+    p {
+        color: $white;
     }
 }

@@ -34,17 +34,24 @@ $fontSize: (
     'Md': 1.3em,
     'L': 2.4em,
     'Xl': 3em,
+    'header': 2.2em,
 );
 
 //----------------bucles----------------
 $fonts: (
     'openSans': ('Open Sans', sans-serif),
-    'roboto': (' Roboto', sans-serif),
-    'daiBanna': ('Dai Banna SIL', sans),
+    'roboto': ('Roboto', sans-serif),
+    'daiBanna': ('Dai Banna SIL', sans-serif),
+    'rubik': ('Rubik', sans-serif)
 );
 
 @each $family, $font in $fonts {
     .font-#{$family} {
         font-family: $font;
     }
+}
+
+.font-robotoBold {
+    @extend .font-roboto;
+    font-weight: bold;
 }
