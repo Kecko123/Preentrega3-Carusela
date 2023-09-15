@@ -55,6 +55,10 @@ header .nav-link::before {
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
+header .nav-link:hover {
+  transform: scale(105%);
+  transition: all 0.5s;
+}
 header .nav-link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
@@ -62,6 +66,10 @@ header .nav-link:hover::before {
 
 .headerH1 {
   font-size: 2.2em;
+}
+.headerH1:hover {
+  transform: scale(110%);
+  transition: all 0.5s;
 }
 
 body {
@@ -97,13 +105,15 @@ a {
   border-radius: 1.5rem;
 }
 
-.infoDeContactoIndex, .infoDeContactoMargins {
+.infoDeContactoIndex,
+.infoDeContactoMargins {
   border: 1px black solid;
   background-color: #d6baa1;
   margin: 0 16px 0 16px;
   line-height: 2rem;
 }
-.infoDeContactoIndex a, .infoDeContactoMargins a {
+.infoDeContactoIndex a,
+.infoDeContactoMargins a {
   font-size: 1em;
   display: block;
   margin: 0 0 1rem 0;
@@ -138,14 +148,18 @@ a {
   border: 1px black solid;
 }
 .botonEnviar:hover {
-  background-color: rgba(32, 188, 4, 0.6666666667);
+  background-color: #20bc04;
+  transform: scale(110%);
+  transition: all 0.5s;
 }
 .botonRestablecer, .botonRestablecer:hover {
   background-color: rgba(215, 5, 5, 0.5019607843);
   border: 1px black solid;
 }
 .botonRestablecer:hover {
-  background-color: rgba(190, 5, 5, 0.6666666667);
+  background-color: #be0505;
+  transform: scale(110%);
+  transition: all 0.5s;
 }
 .botonCerrar {
   background-color: #264141;
@@ -177,6 +191,8 @@ footer a {
 }
 footer a:hover {
   color: #72cf72;
+  transform: scale(110%);
+  transition: all 0.5s;
 }
 footer p {
   color: rgb(242, 242, 242);

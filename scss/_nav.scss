@@ -37,6 +37,11 @@ header {
             transition: transform .3s ease-in-out;
         }
 
+        &:hover{
+            transform: scale(105%);
+            transition: all 0.5s;
+        }
+
         &:hover::before {
             transform-origin: left;
             transform: scaleX(1);
@@ -45,4 +50,9 @@ header {
 }
 .headerH1 {
     font-size: map-get($map: $fontSize, $key: header);
+    
+    &:hover{
+        transform: scale(110%);
+        transition: all 0.5s;
+    }
 }

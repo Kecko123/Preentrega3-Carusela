@@ -38,7 +38,8 @@ a {
     border-radius: $borderRadiusSm;
 }
 
-.infoDeContactoIndex, .infoDeContactoMargins {
+.infoDeContactoIndex,
+.infoDeContactoMargins {
     border: $commonBorder;
     background-color: $secondaryColor;
     @include margins(0, 16px, 0, 16px);
@@ -91,7 +92,9 @@ a {
 
         &:hover {
             @extend .botonEnviar;
-            background-color: #20bc04aa;
+            background-color: #20bc04;
+            transform: scale(110%);
+            transition: all 0.5s;
         }
     }
 
@@ -101,7 +104,9 @@ a {
 
         &:hover {
             @extend .botonRestablecer;
-            background-color: #be0505aa;
+            background-color: #be0505;
+            transform: scale(110%);
+            transition: all 0.5s;
         }
     }
 
@@ -141,6 +146,8 @@ footer {
 
         &:hover {
             color: #72cf72;
+            transform: scale(110%);
+            transition: all 0.5s;
         }
     }
 
